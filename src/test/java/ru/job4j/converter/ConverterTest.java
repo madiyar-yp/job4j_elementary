@@ -11,7 +11,7 @@ class ConverterTest {
         float expected = 2;
         float out = Converter.rubleToEuro(in);
         float eps = 0.0001f;
-        assertThat(out).isEqualTo(expected, withPrecision(eps)); // Вариант 2
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
