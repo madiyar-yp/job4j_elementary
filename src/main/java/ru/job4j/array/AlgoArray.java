@@ -6,12 +6,12 @@ public class AlgoArray {
         int temp = array[3];
         array[3] = array[0];
         array[0] = temp;
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] != i + 1) {
-                array[i] = i + 1;
-            }
-        }
+        temp = array[2];
+        array[2] = array[1];
+        array[1] = temp;
+        temp = array[3];
+        array[3] = array[4];
+        array[4] = temp;
 
         for (int num : array) {
             System.out.println(num);
